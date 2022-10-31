@@ -1,16 +1,16 @@
-// A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
-
-// --The wanted word is in lowercase.
-// --The crowd of letters is all in uppercase.
-// --Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
+// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
 
 
-function detectWord(str) {
-   return str.replace( /[^a-z]/g, '' );
-
+function remainder(x, y) {
+	const remain = x % y;
+	
+	return remain;
 }
-console.log(detectWord("UcUNFYGaFYFYGtNUH"));
 
-console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
+console.log(remainder(1, 3));
 
-console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
+console.log(remainder(3, 4));
+
+console.log(remainder(-9, 45));
+
+console.log(remainder(5, 5));
