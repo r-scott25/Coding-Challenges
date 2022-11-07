@@ -1,16 +1,15 @@
-// A word is on the loose and now has tried to hide amongst a crowd of tall letters! Help write a function to detect what the word is, knowing the following rules:
+// Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
 
-// --The wanted word is in lowercase.
-// --The crowd of letters is all in uppercase.
-// --Note that the word will be spread out amongst the random letters, but their letters remain in the same order.
-
-
-function detectWord(str) {
-   return str.replace( /[^a-z]/g, '' );
-
+function lessThanOrEqualToZero(num) {
+	if (num <= 0) {
+		return true;
+	} else {
+		return false;
+	}
 }
-console.log(detectWord("UcUNFYGaFYFYGtNUH"));
 
-console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
+console.log(lessThanOrEqualToZero(5));
 
-console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
+console.log(lessThanOrEqualToZero(0));
+
+console.log(lessThanOrEqualToZero(-2));
